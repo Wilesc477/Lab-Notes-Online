@@ -11,8 +11,13 @@ const Editor = () => {
         content: '<p>Start Typing...</p>',
         injectCSS: false,
         immediatelyRender: false,
+        editorProps: {
+            attributes: {
+                class: 'prose bg-base-300 border border-base-200 rounded-md focus:outline-none focus:border-accent w-screen min-h-screen h-auto'
+            }
+        }
     })
-    return <EditorContent editor={editor} className="prose bg-base-300 border border-base-200 rounded-md focus:outline-none focus:border-accent w-screen" />
+    return <EditorContent editor={editor} />
 }
 
 
