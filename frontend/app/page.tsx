@@ -15,8 +15,6 @@ export default function Home() {
               Lab Notes+ allows for easy creation and storage of notebooks across many devices,
               without risk of losing your work
             </p>
-            <button className="btn btn-secondary btn-ghost">Get Started</button>
-            <button className="btn btn-accent btn-link">Contact</button>
           </div>
         </div>
       </div>
