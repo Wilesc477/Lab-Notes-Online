@@ -5,7 +5,7 @@ import React from "react"
 const ProfileMenu = () => {
     return (
         <div className="dropdown dropdown-end">
-            <Link href="/Login">
+            <Link href="/login">
                 <div tabIndex={0} role="button" className="btn btn-ghost">
                     <div className="rounded-full">Register/Login</div>
                 </div>

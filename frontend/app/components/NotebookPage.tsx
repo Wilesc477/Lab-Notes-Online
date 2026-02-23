@@ -8,7 +8,6 @@ const Editor = () => {
         onUpdate: ({ editor }) => {
             const html = editor.getHTML()
         },
-        content: '<p>Start Typing...</p>',
         injectCSS: false,
         immediatelyRender: false,
         editorProps: {
