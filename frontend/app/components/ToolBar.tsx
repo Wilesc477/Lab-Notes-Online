@@ -1,13 +1,25 @@
-import React from 'react'
+'use client';
+
+import React, { useState } from 'react'
 import Image from 'next/image'
+import HomeButton from "./HomeButton"
+
 
 const ToolBar = () => {
+    const [name, setName] = useState('');
+
+    const handleChange = (event) => {
+        setName(event.target.value);
+    }
+
     return (
         <div className="sticky top-0 z-50 bg-base-100">
             {/* File Name*/}
             <div className="flex gap-4">
-                <Image src="/Open-Book--Streamline-Flex.png" alt="Open Book" width={50} height={20} className="flex flex-none" />
-                <p className="flex flex-none py-4">New Notebook</p>
+                <HomeButton />
+                <div>
+                    <input id="notebook-name" type="text" value={name} onChange={handleChange} placeholder="New Notebook" />
+                </div>
             </div>
             {/* Tool Bar*/}
             <div className="flex justify-center h-10">
