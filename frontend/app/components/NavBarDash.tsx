@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import WriteNav from "./WriteNav"
-import LoginBtn from "./LoginBtn"
+import ProfileMenu from "./ProfileMenu"
 import React from 'react'
 
 const NavBar = () => {
@@ -16,9 +16,9 @@ const NavBar = () => {
                 <h1 className="text-5xl font-bold">Lab Notes+</h1>
             </div>
 
-            {/* Register / Login */}
+            {/* Profile with drop down*/}
             <div className="navbar-end">
-                <LoginBtn />
+                <ProfileMenu />
             </div>
         </div>
     )

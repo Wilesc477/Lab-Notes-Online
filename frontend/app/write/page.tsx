@@ -1,14 +1,17 @@
-import ToolBar from "../components/ToolBar"
+
 import NotebookPage from "../components/NotebookPage"
+import { EditorProvider } from "@tiptap/react"
+import StarterKit from "@tiptap/starter-kit"
+import { MenuBar } from "../components/EditorMenuBar"
+import dynamic from 'next/dynamic'
+
+
 
 const Write = () => {
     return (
         <div>
-            <ToolBar />
             {/* Page editor */}
-            <div className="flex justify-center h-screen pt-6">
-                <NotebookPage />
-            </div>
+            < NotebookPage />
         </div>
     )
 }

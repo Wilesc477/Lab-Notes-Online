@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tiptap/extension-text-style": "^3.20.1",
     "@tiptap/pm": "^3.13.0",
     "@tiptap/react": "^3.13.0",
     "@tiptap/starter-kit": "^3.13.0",
@@ -27,6 +28,7 @@
     "daisyui": "^5.5.5",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
+    "sass": "^1.98.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
