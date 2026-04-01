@@ -6,21 +6,27 @@ import type { Editor } from '@tiptap/core'
 import StarterKit from '@tiptap/starter-kit'
 import React, { useState } from 'react'
 import { MenuBar } from './EditorMenuBar'
-import HomeButton from "./HomeButton"
+import HomeButton from "../HomeButton"
+import { DrawingNode } from "./DrawingNode"
+import { TableOfContents } from "./TOCExtension"
+import { LabSafetyRules } from './SafetyExtension'
+import { ExperimentDescription } from "./DescriptionExtension"
+import { SummarySteps } from "./SummaryExtension"
 
-const extensions = [TextStyleKit, StarterKit]
+const extensions = [TextStyleKit, StarterKit, DrawingNode, TableOfContents, LabSafetyRules, ExperimentDescription, SummarySteps]
 
 const NotebookEditor = () => {
+    const [content, setContent] = useState('')
     const editor = useEditor({
         extensions: extensions,
         injectCSS: false,
         immediatelyRender: false,
         onUpdate: ({ editor }) => {
-            const html = editor.getHTML()
+            setContent(editor.getHTML())
         },
         editorProps: {
             attributes: {
-                class: 'prose bg-base-300 border border-base-200 rounded-md focus:outline-none focus:border-accent w-[816px] h-[1056px]'
+                class: 'prose bg-base-300 border border-base-200 rounded-md focus:outline-none focus:border-accent w-[816px] overflow-hidden'
             }
         }
     })
@@ -30,7 +36,7 @@ const NotebookEditor = () => {
     return (
         <>
             <ToolBar editor={editor} />
-            <div className="flex justify-center pt-6">
+            <div className="flex justify-center pt-6 min-h-0">
                 <EditorContent editor={editor} />
             </div>
         </>
@@ -54,7 +60,7 @@ const ToolBar = ({ editor }: { editor: Editor }) => {
                 </div>
             </div>
             {/* Tool Bar*/}
-            <div className="flex justify-center h-10">
+            <div className="flex justify-center">
                 <div className="bg-base-200 w-7/8 rounded-3xl">
                     <MenuBar editor={editor} />
                 </div>
