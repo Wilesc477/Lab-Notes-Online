@@ -1,14 +1,11 @@
-import ToolBar from "../components/ToolBar"
-import NotebookPage from "../components/NotebookPage"
+
+import NotebookPage from "../components/editorComponents/NotebookPage"
 
 const Write = () => {
     return (
         <div>
-            <ToolBar />
             {/* Page editor */}
-            <div className="flex justify-center h-screen pt-6">
-                <NotebookPage />
-            </div>
+            < NotebookPage />
         </div>
     )
 }
