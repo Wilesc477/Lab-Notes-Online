@@ -1,0 +1,2 @@
+CREATE VIEW `notebook_view` AS select "id", "title", "content", "createdAt", "updatedAt", "author_id" from "notebooks";--> statement-breakpoint
+CREATE VIEW `user_view` AS select "id", "username", "password" from "users";
