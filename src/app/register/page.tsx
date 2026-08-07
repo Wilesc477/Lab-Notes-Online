@@ -1,3 +1,6 @@
+/*
+Registration page where users can create a new account
+*/
 import Form from 'next/form'
 import HomeButton from "../components/HomeButton"
 import { signIn, auth } from "@/auth"

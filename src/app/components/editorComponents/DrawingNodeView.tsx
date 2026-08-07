@@ -1,3 +1,7 @@
+/*
+Content of TipTap Drawing Node
+Creates and saves information from Modal
+*/
 'use client'
 
 import { NodeViewWrapper } from '@tiptap/react'

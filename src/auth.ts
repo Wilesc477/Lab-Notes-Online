@@ -1,3 +1,7 @@
+/*
+defines authorization and password hashing used in application
+Note: Currently OAuth credentials are used but should be switched to email verification or other more secure means in production
+*/
 import NextAuth from "next-auth"
 import Credentials from "next-auth/providers/credentials"
 import { db } from "@/lib/index"

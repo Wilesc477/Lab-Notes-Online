@@ -1,3 +1,7 @@
+/*
+Internal API for saving and loading database content
+Note: Database objects are potentially undefined and should be addressed in production
+*/
 import { NextResponse } from "next/server"
 import { db } from "@/lib/index"
 import { usersTable, notebooksTable } from "@/lib/db/schema"

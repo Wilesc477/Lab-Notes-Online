@@ -1,3 +1,6 @@
+/*
+Extension for Experiment Description template
+*/
 import { Extension } from '@tiptap/core'
 
 export const ExperimentDescription = Extension.create({

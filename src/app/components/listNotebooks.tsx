@@ -1,3 +1,6 @@
+/*
+Function used to list all notebooks for a user on Dashboard page
+*/
 "use client"
 import { useRouter } from "next/navigation"
 

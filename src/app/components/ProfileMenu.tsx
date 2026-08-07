@@ -1,3 +1,7 @@
+/*
+Profile dropdown on dashboard page
+only features logout option; may be expanded to allow for user specific customization or account deletion later
+*/
 import Link from 'next/link'
 import React from "react"
 import { signOut } from "@/auth"

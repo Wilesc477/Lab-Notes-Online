@@ -1,3 +1,6 @@
+/*
+Creates and Updates TipTap Editor Instance on Notebook Editor page
+*/
 'use client'
 import './EditorStyles.module.scss'
 import { TextStyleKit } from '@TipTap/extension-text-style'

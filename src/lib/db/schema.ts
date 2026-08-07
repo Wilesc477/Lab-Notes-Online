@@ -1,3 +1,6 @@
+/*
+Database schema defining how user info and tables are stored, and the relation between notebooks and users
+*/
 import { sqliteTable, text, sqliteView, integer, uniqueIndex } from "drizzle-orm/sqlite-core"
 import { relations, sql } from 'drizzle-orm';
 

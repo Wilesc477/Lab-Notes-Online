@@ -1,3 +1,6 @@
+/*
+Menu bar for Writing page that contains all styling buttons
+*/
 import type { Editor } from '@tiptap/core'
 import { useEditorState } from '@tiptap/react'
 import React from 'react'

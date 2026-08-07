@@ -1,3 +1,6 @@
+/*
+Navigation bar used on Home Page
+*/
 import Link from 'next/link'
 import WriteNav from "./WriteNav"
 import LoginBtn from "./LoginBtn"

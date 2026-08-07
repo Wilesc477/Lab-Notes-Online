@@ -1,3 +1,6 @@
+/*
+Defines commands for TipTap Event handling
+*/
 import '@tiptap/core'
 
 declare module 'tiptap-pagination-breaks';
