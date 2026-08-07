@@ -1,3 +1,8 @@
+/*
+Login page where users can login or be redirected to register a new account
+Note: Due to form formatting there is an error when users enter information using enter key instead of pressing login button
+Note: Page throws an error on invalid login information, would be best to instead show an error message
+*/
 import Form from 'next/form'
 import HomeButton from "../components/HomeButton"
 import { signIn, auth } from "@/auth"

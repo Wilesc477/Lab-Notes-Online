@@ -1,4 +1,6 @@
-
+/*
+Page that renders TipTap Editor
+*/
 import NotebookPage from "../components/editorComponents/NotebookPage"
 import { auth } from "@/auth"
 import { redirect } from "next/navigation"

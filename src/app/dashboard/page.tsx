@@ -1,3 +1,8 @@
+/*
+User Dashboard Page accessible after login
+Users can edit saved lab notebooks, create new lab notebooks, and logout of their account
+Note: In production Line 23 should be removed and instead made an internal API call
+*/
 import NavBar from "../components/NavBarDash"
 import Link from "next/link"
 import { eq } from "drizzle-orm"

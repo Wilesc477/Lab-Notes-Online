@@ -1,3 +1,6 @@
+/*
+TipTap Extension for Summary Steps
+*/
 import { Extension } from '@tiptap/core'
 
 export const SummarySteps = Extension.create({

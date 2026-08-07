@@ -1,3 +1,6 @@
+/*
+Create CanvasJS instance and event handlers
+*/
 "use client"
 import React, { useRef, useEffect, useState } from 'react';
 

@@ -1,3 +1,6 @@
+/*
+Modal used to create drawings for notebooks
+*/
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'

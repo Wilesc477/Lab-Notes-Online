@@ -1,3 +1,6 @@
+/*
+Reusable Home button; Navigates to previous page the user was on
+*/
 'use client';
 
 import Link from 'next/link'

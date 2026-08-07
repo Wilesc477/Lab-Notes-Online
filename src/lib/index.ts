@@ -1,3 +1,7 @@
+/*
+Index page for Drizzle DB
+Note: Database should be wiped for future testing and developement, most entries are invalid after implementing proper password hashing
+*/
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/libsql';
 import { eq } from 'drizzle-orm';

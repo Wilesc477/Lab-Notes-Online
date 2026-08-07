@@ -1,3 +1,6 @@
+/*
+TipTap Extension for Table of Contents template
+*/
 import { Extension } from '@tiptap/core'
 
 export const TableOfContents = Extension.create({

@@ -1,3 +1,6 @@
+/*
+Homepage allowing users to sign in or begin editing new notebooks
+*/
 import NavBar from "./components/NavBar"
 
 export default function Home() {

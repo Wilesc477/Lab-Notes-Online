@@ -1,3 +1,6 @@
+/*
+Internal API route for exporting Lab Notebook as PDF
+*/
 import puppeteer from 'puppeteer'
 
 export async function POST(req: Request) {
@@ -6,14 +9,6 @@ export async function POST(req: Request) {
         headless: true,
     })
     const page = await browser.newPage()
-    /*
-    const drawings = document.querySelectorAll('canvas')
-    drawings.forEach(drawing => {
-        const img = document.createElement('img')
-        img.src = drawing.toDataURL()
-        drawing.replaceWith(img)
-    })
-    */
 
     await page.setContent(`
         <html>
@@ -35,11 +30,6 @@ export async function POST(req: Request) {
             </body>
         </html>
         `)
-    /*
-    await page.setContent(html, {
-        waitUntil: 'networkidle0',
-    })
-    */
     const pdf = await page.pdf({
         format: 'A4',
         printBackground: true,

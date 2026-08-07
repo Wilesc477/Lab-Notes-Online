@@ -1,3 +1,6 @@
+/*
+Navigation bar used on Dashboard page
+*/
 import Link from 'next/link'
 import WriteNav from "./WriteNav"
 import ProfileMenu from "./ProfileMenu"

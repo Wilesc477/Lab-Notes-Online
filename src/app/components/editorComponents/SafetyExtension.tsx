@@ -1,3 +1,6 @@
+/*
+TipTap Extension for Lab Safety Rules template
+*/
 import { Extension } from '@tiptap/core'
 
 export const LabSafetyRules = Extension.create({
